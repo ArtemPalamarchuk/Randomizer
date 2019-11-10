@@ -53,14 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 		
 		 function shuffle(array){
-			 var j, temp;
-			 for(var i = array.length - 1; i > 0; i--){
+			 let j, temp;
+			 for(let i = array.length - 1; i > 0; i--){
 				j = Math.floor(Math.random()*(i + 1));
 				temp = array[j];
 				array[j] = array[i];
 				array[i] = temp;
 			 }
-		 return array;
+			return array;
 		 }
 	
 	});		
